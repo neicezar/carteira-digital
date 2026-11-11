@@ -1,5 +1,9 @@
 # Carteira Digital
 
+## Linha do badge
+
+[![CI](https://github.com/neicezar/carteira-digital/actions/workflows/ci.yml/badge.svg?branch=develop)](https://github.com/neicezar/carteira-digital/actions/workflows/ci.yml)
+
 ## 🚀 Como subir o ambiente local
 
 Para preparar e inicializar a infraestrutura e a aplicação localmente, execute os seguintes passos:
