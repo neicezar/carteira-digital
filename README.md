@@ -1,3 +1,5 @@
+# Carteira Digital
+
 ## 🚀 Como subir o ambiente local
 
 Para preparar e inicializar a infraestrutura e a aplicação localmente, execute os seguintes passos:
@@ -6,6 +8,7 @@ Para preparar e inicializar a infraestrutura e a aplicação localmente, execute
 
    ```bash
    cp .env.example .env
+   ```
 
 2. **Subir o banco de dados PostgreSQL:**
 

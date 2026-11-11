@@ -8,7 +8,7 @@ services:
       POSTGRES_USER: ${DB_USER:-contas_user}
       POSTGRES_PASSWORD: ${DB_PASSWORD:-contas_pass}
     ports:
-      - "${DB_PORT:-5432}:5432"
+      - "${DB_PORT:-5433}:5432"
     volumes:
       - contas_pgdata:/var/lib/postgresql/data
     healthcheck:
