@@ -1,0 +1,24 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: contas_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${DB_NAME:-contas_db}
+      POSTGRES_USER: ${DB_USER:-contas_user}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-contas_pass}
+    ports:
+      - "${DB_PORT:-5432}:5432"
+    volumes:
+      - contas_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U ${DB_USER:-contas_user} -d ${DB_NAME:-contas_db}" ]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+
+volumes:
+  contas_pgdata:
+    driver: local
+
