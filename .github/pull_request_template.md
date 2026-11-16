@@ -1,6 +1,6 @@
 ## História no Jira
 
-[CART-<n>](https://SEU-SITE.atlassian.net/browse/CART-<n>)
+[CART-<n>](https://iscp-neicezar.atlassian.net/browse/CART-<n>)
 
 ## O que mudou
 
